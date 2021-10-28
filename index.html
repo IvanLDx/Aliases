@@ -5,8 +5,58 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Git Aliases</title>
     <link rel="stylesheet" href="master.css">
+    <meta http-equiv="refresh" content="2">
 </head>
 <body>
-    
+    <main>
+        <h1>Aliases</h1>
+
+        <p>Git aliases are shortmands for lazy writers, with these features, you will use git more efficiently, let's see how to add and use it.</p>
+
+        <h2>Initialize git to your repository</h2>
+        <p>To go to your repository, write the next line on command prompt (cmd):</p>
+        <div class="code">
+            <p>cd C:\your_repository</p>
+        </div>
+        <p>and click <span class="code">enter</span>.</p>
+        
+        <p>Now, to create .git hidden folder typing:</p>
+        <div class="code">
+            <p>git init</p>
+        </div>
+        <p>Well done, you have created a new git to your repo!</p>
+        <h2>Configure your first alias</h2>
+        <p>Writing git commands is a boring task, we can continue using normal commands or we can add aliases to our global git conif.</p>
+        <p>Now is the moment to add these features, at this point I guess you know several git commands, then, let's create a new alias to perform our workspace! The following code is the method that we will use to add it.</p>
+        <div class="code">
+            <p>git config --global alias.s status</p>
+        </div>
+        <p>Now, check what can do this config, type:</p>
+        <div class="code">
+            <p>git s</p>
+        </div>
+        <p>Console wil print this text:</p>
+        <div class="code">
+            <p>On branch main</p>
+            <p>Your branch is up to date with 'origin/main'.</p>
+            <p>...</p>
+        </div>
+        <p>Right! You used <span class="code">git status</span> just writing <span class="code">git s</span></p>
+        <p>You can add aliases with more than one word like this:</p>
+        <div class="code">
+            <p>git config --global alias.cob "checkout -b"</p>
+        </div>
+        <p>Perfect! Now we can use more aliases, there is a list that you can use to be more efficient using git.</p>
+
+        <h2>List of aliases</h2>
+        <div class="code">
+            <p>alias.s status</p>
+            <p>alias.b branch</p>
+            <p>alias.co checkout</p>
+            <p>alias.cob checkout -b</p>
+            <p>alias.aa add .</p>
+            <p>alias.cm commit -m</p>
+        </div>
+    </main>
 </body>
 </html>
